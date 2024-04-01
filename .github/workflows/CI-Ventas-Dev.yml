@@ -54,7 +54,7 @@ jobs:
           key: ${{ env.SSH_PRIVATE_KEY }}
           script: |
             cd /opt/Ventas_Dev
-            sudo git clone https://${{ secrets.GH_TOKEN }}git@github.com:PaulaJuliaBalza/CI-PaulaJuliaBalza.git .
+            sudo git clone https://{{ secrets.GH_TOKEN }}github.com/PaulaJuliaBalza/CI-PaulaJuliaBalza.git .
 
       # Install npm packages express pm2
       - name: Install npm packages
