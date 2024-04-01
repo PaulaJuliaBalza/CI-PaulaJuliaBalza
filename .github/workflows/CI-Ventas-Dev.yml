@@ -87,7 +87,7 @@ jobs:
           username: ${{ env.REMOTE_USER }}
           key: ${{ env.SSH_PRIVATE_KEY }}
           script: |
-            # if sudo pm2 status | grep -q  '${{ env.APP_NAME }}'; then 
+            # if sudo pm2 status | grep -q  '${{ env.APP_NAME }}'; then --> otra opción
             if sudo pm2 ls | grep -q  '${{ env.APP_NAME }}'; then 
             echo "El servicio ${{ env.APP_NAME }} está en ejecución."
             else
