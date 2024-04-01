@@ -91,3 +91,6 @@ jobs:
             if sudo pm2 ls | grep -q  '${{ env.APP_NAME }}'; then 
             echo "El servicio ${{ env.APP_NAME }} está en ejecución."
             else
+            echo "El servicio ${{ env.APP_NAME }} no está en ejecución."
+            exit 1
+            fi
