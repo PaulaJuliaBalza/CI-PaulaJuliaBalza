@@ -1,4 +1,4 @@
-name: Deploy App Node.js to EC2 - CI
+name: Deploy App Node.js to EC2 - CI Ventas Dev
 
 # Trigger
 on:
